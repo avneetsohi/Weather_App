@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+        
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h2>Weather App</h2>
+            <div class="tabs-container">
+                <button class="weather-btn" id="your-weather" your-weather-btn>Your Weather</button>
+                <button class="weather-btn" id="search-weather" search-weather-btn>Search Weather</button>
+            </div>
+
+            <div class="info-container">
+                <!-- Grant Access Container -->
+                <div class="grant-access-container">
+                    <img src="assets/location.png" alt="" height="80px" loading="lazy">
+                    <p class="access-content">Grant Location Access</p>
+                    <p class="allow-access">Allow Accesss to get Weather Information</p>
+                    <button data-grantAccess>Grant Access</button>
+                </div> 
+
+                <!-- Search-bar Container -->
+                <form class="search-container">
+                    <input type="text" placeholder="Search for city..." class="search-bar">
+                    <button class="search-button">
+                        <img src="assets/search.png" alt="" height="18px">
+                    </button>
+                </form>
+
+                <!-- Loading Container -->
+                <div class="loading-gif">
+                    <img src="assets/loading.gif" alt="" height="150px" >
+                    <p>LOADING</p>
+                </div>
+                
+                <!-- Weather-info container -->
+                <div class="weather-details-container">
+                    <div class="location-container">
+                        <p data-cityName></p>
+                        <img data-countryIcon >
+                    </div>
+                    <div class="weather-type"></div>
+                    <img class="weather-type-img" width="90">
+                    <h1 class="temp"></h1>
+                    <div class="other-details-container">
+                        <div class="weather-card" id="windspeed-container">
+                            <img src="assets/wind.png" alt="">
+                            <h3  id="">WINDSPEED</h3>
+                            <h4  class="metrics" id="windspeed-metric"></h4>
+                        </div>
+                        <div  class="weather-card" id="humidity-container">
+                            <img src="assets/humidity.png" alt="">
+                            <h3  id="">HUMIDITY</h3>
+                            <h4 class="metrics" id="humidity-metric"></h4>
+                        </div>
+                        <div  class="weather-card" id="clouds-container">
+                            <img src="assets/cloud.png" alt="">
+                            <h3  id="">CLOUDS</h3>
+                            <h4 class="metrics" id="clouds-metric"></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="error-container">
+                    <img src="assets/not-found.png" alt="" height="150px">
+                    <div class="error-msg"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="index2.js"></script>
+</body>
+</html>
+
+<!-- Homework
+
+what is json string vs json object?
+Read the articles
+ 
+-->
